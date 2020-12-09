@@ -8,6 +8,12 @@ This build consists of:
 - Clean Django project in `backend` folder
 - nginx server to handle port routing, so that there is a single entry-point
 
+## Goal
+
+The goal of this boilerplate was to pack full-stack
+development environment into Docker Compose setup, 
+so that developer has a hot reload single entry point
+with front-end in React and Django as an API.
 
 ## Run
 
@@ -24,7 +30,14 @@ $ docker-compose up
 4. Access the complete run: http://localhost:8080
 
 
-### Containers, Services and Ports
+## Workflow
+
+Once you have it all running you can start editing your components in `.js` or modify Django project.
+
+In case you need real-time logs you can can run compose in non-interactive mode and then watch the logs directly from the running containers.
+
+
+## Containers, Services and Ports
 
 Below is a summary of what is where in case you need to access each part separately:
 
